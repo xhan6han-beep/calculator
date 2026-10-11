@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>计算器</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="calculator" aria-label="计算器">
+      <header class="display">
+        <div class="expression" id="expression" aria-live="polite"></div>
+        <div class="result" id="result" aria-live="assertive">0</div>
+      </header>
+
+      <div class="keys" role="group" aria-label="按键">
+        <button type="button" data-action="clear" class="key function">AC</button>
+        <button type="button" data-action="sign" class="key function">±</button>
+        <button type="button" data-action="percent" class="key function">%</button>
+        <button type="button" data-op="÷" class="key operator">÷</button>
+
+        <button type="button" data-digit="7" class="key">7</button>
+        <button type="button" data-digit="8" class="key">8</button>
+        <button type="button" data-digit="9" class="key">9</button>
+        <button type="button" data-op="×" class="key operator">×</button>
+
+        <button type="button" data-digit="4" class="key">4</button>
+        <button type="button" data-digit="5" class="key">5</button>
+        <button type="button" data-digit="6" class="key">6</button>
+        <button type="button" data-op="−" class="key operator">−</button>
+
+        <button type="button" data-digit="1" class="key">1</button>
+        <button type="button" data-digit="2" class="key">2</button>
+        <button type="button" data-digit="3" class="key">3</button>
+        <button type="button" data-op="+" class="key operator">+</button>
+
+        <button type="button" data-digit="0" class="key zero">0</button>
+        <button type="button" data-action="decimal" class="key">.</button>
+        <button type="button" data-action="equals" class="key equals">=</button>
+      </div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
